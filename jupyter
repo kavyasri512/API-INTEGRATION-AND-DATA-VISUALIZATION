@@ -1,0 +1,17 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Sample data (Using a built-in dataset for demonstration)
+tips = sns.load_dataset("tips")
+
+# Create a boxplot
+sns.boxplot(x='day', y='total_bill', data=tips)
+
+# Add title and labels
+plt.title('Total Bill by Day')
+plt.xlabel('Day')
+plt.ylabel('Total Bill')
+
+# Show the plot
+plt.show()
+
